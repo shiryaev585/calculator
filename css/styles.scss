@@ -1,0 +1,56 @@
+$darkColor: #34495E;
+$greenColor: #41B883;
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+#app {
+    width: 300px;
+    margin: 150px auto;
+    box-shadow: 0 3px 15px #ccc;
+}
+
+.input {
+    width: 100%;
+    border: 0;
+    color: $darkColor;
+    font-size: 32px;
+    padding: 12px;
+    text-align: right;
+    outline: none;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+
+}
+
+.cell {
+    flex: 33%;
+    height: 80px;
+    font-size: 24px;
+    border: none;
+    outline: none;
+    &:hover {
+        background-color: #182530;
+    }
+}
+
+.number {
+    background-color: $darkColor;
+    color: #fff;
+    font-weight: 400;
+}
+
+.operation {
+    background-color: $greenColor;
+    color: #243849;
+    &:hover {
+        color: #fff;
+    }
+}
